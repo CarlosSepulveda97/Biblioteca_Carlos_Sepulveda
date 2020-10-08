@@ -25,8 +25,8 @@ public class github_act extends AppCompatActivity {
         spin1 = (Spinner) findViewById(R.id.spn);
         text = (TextView) findViewById(R.id.tv);
 
-        String[] librosSpinner = {"Farenheit", "Revival", "El Alquimista"};
-        final String[][] libros = {{"Farenheit","5000"},{"Revival", "12000"},{"El Alquimista", "4500"}};
+        String[] librosSpinner = {"Farenheit", "Revival", "El Alquimista", "El Poder", "Despertar"};
+        final String[][] libros = {{"Farenheit","7000"},{"Revival", "22000"},{"El Alquimista", "45000"},{"El Poder", "88000"},{"Despertar", "156000"}};
 
         spin1.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, librosSpinner));
 
@@ -38,7 +38,6 @@ public class github_act extends AppCompatActivity {
                 for (int cont=0; cont < libros.length; cont++){
                     if (spin1.getSelectedItem().toString().equals(libros[cont][0])) {
                         text.setText("El valor de " + libros[cont][0] + " es de " + libros[cont][1]);
-
                     }
                 }
             }

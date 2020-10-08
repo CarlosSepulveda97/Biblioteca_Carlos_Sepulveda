@@ -32,12 +32,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                new Task().execute(); // ejecuta mi tarea asíncrona.
+                new Task().execute();
             }
         });
-
-
-        progress.setVisibility(View.INVISIBLE); // desaparece el elemento.
+        
+        progress.setVisibility(View.INVISIBLE);
     }
 
 
@@ -45,20 +44,20 @@ public class MainActivity extends AppCompatActivity {
 
     class Task extends AsyncTask<String, Void, String> {
 
-        @Override  // Vamos a darle la configuración inicial a la tarea
+        @Override
         protected void onPreExecute() {
 
             progress.setVisibility(View.VISIBLE);
         }
 
 
-        @Override // vamos a emplear el proceso o tarea pesada en segundo plano.
+        @Override
         protected String doInBackground(String... strings) {
 
             for(int i = 1; i < 10; i++)
             {
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(200);
 
                 }catch (Exception e)
                 {
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        @Override // finalizamos la tarea
+        @Override
         protected void onPostExecute(String s) {
 
             progress.setVisibility(View.INVISIBLE);

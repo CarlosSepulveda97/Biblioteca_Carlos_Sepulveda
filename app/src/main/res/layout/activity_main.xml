@@ -53,7 +53,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="60dp"
-        android:text="Button"
+        android:text="Log In"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -70,11 +70,11 @@
 
     <ImageButton
         android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="229dp"
+        android:layout_width="83dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="120dp"
         android:background="@android:color/transparent"
         android:onClick="git"
         app:layout_constraintStart_toStartOf="parent"
